@@ -4,22 +4,79 @@
 	<meta charset="UTF-8">
 	<title>Groove Tech</title>
 
+	 <!-- Se agrega materialize CSS -->
+	 <link rel="stylesheet" href="materialize/css/materialize.min.css">
+
+	 <!--Se importa Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 	<!-- Se agrega angular y jquery --> 
 	<script src="js/lib/angular.min.js"></script>
 	<!-- <script src="js/lib/angular-route.min.js"></script> -->
 	<script src="js/lib/jquery-3.1.1.min.js"></script>
 	
 
-	<!-- Se agrega app -->
+	<!-- Se agrega materialize JS -->
+	<script src="materialize/js/materialize.min.js"></script>
+
+	<!-- Se agrega app JS -->
 	<script src="js/app.js"></script>
 	
+
+	<!-- Se agrega JS inicio -->
+	<script src="js/inicio.js"></script>
 </head>
 <body>
 	
 	<!-- Inicia menu -->
-	<div ng-include="menu"> </div>
+	  <nav ng-init="tab = 1">
+	    <div class="nav-wrapper">
+	      <a href="#!" class="brand-logo">Groove Tech</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="" ng-click="tab = 1">Inico</a></li>
+	        <li><a href="" ng-click="tab = 2">Quienes Somos</a></li>
+	        <li><a href="" ng-click="tab = 3">Servicios</a></li>
+	        <li><a href="" ng-click="tab = 4">Contacto</a></li>
+	      </ul>
+	      <ul class="side-nav" id="mobile-demo">
+	        <li><a href="" ng-click="tab = 1">Inico</a></li>
+	        <li><a href="" ng-click="tab = 2">Quienes Somos</a></li>
+	        <li><a href="" ng-click="tab = 3">Servicios</a></li>
+	        <li><a href="" ng-click="tab = 4">Contacto</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+ 
 	<!-- termina menu -->
 
+
+	<!-- vista de inicio -->
+	<div ng-show="tab === 1">
+		<h1>Inicio</h1>
+	</div>
+	<!-- fin vista inicio -->
+	
+	<!-- vista de quienes somos -->
+	<div ng-show="tab === 2">
+		<h1>Quienes Somos</h1>
+	</div>
+	<!-- fin vista quienes somos -->
+	
+
+	<!-- vista de servicios -->
+	<div ng-show="tab === 3">
+		<h1>Servicios</h1>
+	</div>
+	<!-- fin vista de servicios -->
+	
+	<!-- vista Contacto -->
+	<div ng-show="tab === 4">
+		<h1>Contacto</h1>
+	</div>
+	<!-- fin vista de contacto-->
+
+	{{tab}}
 	<!-- Inica footer -->
 	<div ng-include="footer"></div>
 	<!-- termina footer -->
