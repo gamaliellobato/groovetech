@@ -1,0 +1,23 @@
+.slider .indicators{
+	margin:-180px !important;
+}
+
+.slides{
+	height: 590px !important;
+}
+
+.content{
+	margin-top: 250px;
+}
+
+.circulo{
+	width: 150px;
+	height: 150px;
+}
+
+.promo-caption{
+	font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 0;
+}

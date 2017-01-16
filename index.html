@@ -7,6 +7,8 @@
 	 <!-- Se agrega materialize CSS -->
 	 <link rel="stylesheet" href="materialize/css/materialize.min.css">
 
+	 <link rel="stylesheet" href="css/inicio.css">
+
 	 <!--Se importa Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -53,7 +55,142 @@
 
 	<!-- vista de inicio -->
 	<div ng-show="tab === 1">
-		<h1>Inicio</h1>
+	  <div class="slider">
+	    <ul class="slides">
+	      <li>
+	        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+	        <div class="caption center-align">
+	          <h3>This is our big Tagline!</h3>
+	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+	        <div class="caption left-align">
+	          <h3>Left Aligned Caption</h3>
+	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+	        <div class="caption right-align">
+	          <h3>Right Aligned Caption</h3>
+	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	        </div>
+	      </li>
+	      <li>
+	        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+	        <div class="caption center-align">
+	          <h3>This is our big Tagline!</h3>
+	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+	        </div>
+	      </li>
+	    </ul>
+	  </div>
+	
+	<div class="content">
+
+		<div class="container">
+		    <div class="row">
+
+		      <div class="col s12 m12 l4">
+		        <!-- Promo Content 1 goes here -->
+		        <div class="center promo promo-example">
+	                <img src="img/seo-and-development/png/atom.png" alt="" class="circulo">
+	                <p class="promo-caption">Acelera el desarrollo</p>
+	                <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+	            </div>
+		      </div>
+
+		      <div class="col s12 m12 l4">
+		        <!-- Promo Content 2 goes here -->
+		        <div class="center promo promo-example">
+	                <img src="img/seo-and-development/png/atom.png" alt="" class="circulo">
+	                <p class="promo-caption">Acelera el desarrollo</p>
+	                <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+	            </div>
+		      </div>
+
+		      <div class="col s12 m12 l4">
+		        <!-- Promo Content 3 goes here -->
+		        <div class="center promo promo-example">
+	                <img src="img/seo-and-development/png/atom.png" alt="" class="circulo">
+	                <p class="promo-caption">Acelera el desarrollo</p>
+	                <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+	            </div>
+		      </div>
+
+		    </div>	
+
+		    <div class="divider"></div>
+
+		    <div class="">
+		    	<div class="center">
+		    		<h5>ALGUNOS DE NUESTROS TRABAJOS</h5>
+		    		<div class="row">
+		    			<div class="col s12">
+		    				<h3>ALGUNOS DE NUESTROS TRABAJOS REALIZADOS</h3>		  		
+		    			</div>
+		    		</div>
+		    	</div>
+
+		    	<div class="row">
+					<div class="col s4">
+					  <div class="card medium">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="img/portafolio/maclar.png">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">This is a link</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+					</div>	
+
+					<div class="col s4">
+					  <div class="card medium">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="img/portafolio/fitcenter.png">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">This is a link</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+					</div>	
+
+					<div class="col s4">
+					  <div class="card medium">
+					    <div class="card-image waves-effect waves-block waves-light">
+					      <img class="activator" src="img/portafolio/mondelez.png">
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+					      <p><a href="#">This is a link</a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+					</div>			    		
+		    	</div>
+		    </div>
+
+
+		</div><!-- Fin container -->
+	    	
+	</div>
+	
+
 	</div>
 	<!-- fin vista inicio -->
 	
