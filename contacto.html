@@ -8,6 +8,7 @@
 	 <link rel="stylesheet" href="materialize/css/materialize.min.css">
 
 	 <link rel="stylesheet" href="css/inicio.css">
+	 <link rel="stylesheet" href="css/contacto.css">
 
 	 <!--Se importa Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,6 +28,7 @@
 
 	<!-- Se agrega JS inicio -->
 	<script src="js/inicio.js"></script>
+	<script src="js/mail.js"></script>
 </head>
 <body>
 	
@@ -41,11 +43,28 @@
 	
 	<!-- vista Contacto -->
 	<div>
-		<h1>Contacto</h1>
+		
 	
 	<div class="container">
+
+	<h4>Escribenos y nos pondremos en contacto.</h4>
+
 	  <div class="row">
-	    <form class="col s12 m12 l6" >
+	      <div class="col s12 m12 l6">
+	        <div class="card-panel light-blue darken-3 hoverable">
+	          <span class="white-text">
+	          	<i class="material-icons">location_on</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellendus sed, distinctio facilis quisquam nesciunt, nemo sapiente ab, recusandae velit iusto in aut! Ipsam sunt fugit vitae tenetur blanditiis obcaecati!
+	          <br>
+	          <br>
+	          <i class="material-icons">phone</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis non ullam nam nobis illum rerum excepturi aspernatur accusamus quasi sapiente qui, laudantium natus architecto ipsa dignissimos ducimus et voluptas.
+	          <br><br>
+	          <i class="material-icons">mail_outline</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis incidunt, quo temporibus, numquam similique dignissimos. Neque animi, porro maxime ab hic, voluptatibus minus veniam unde ipsum officia sequi enim exercitationem.
+	          <br><br>
+	          <i class="material-icons">public</i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam officia ratione iusto nostrum perferendis laborum sed ut provident quasi sit neque molestiae, necessitatibus dolore nihil repudiandae illo, animi obcaecati est.
+	          </span>
+	        </div>
+	      </div>
+	    <form class="col s12 m12 l6" method="post">
 	      <div class="">
 	        <div class="input-field col s12 m12 l12">
 	          <i class="material-icons prefix">account_circle</i>
@@ -54,8 +73,8 @@
 	        </div>
 	        <div class="input-field col s12 m12 l12">
 	          <i class="material-icons prefix">phone</i>
-	          <input id="tel" type="text" class="validate">
-	          <label for="tel">Telefono</label>
+	          <input id="telefono" type="text" class="validate">
+	          <label for="telefono">Telefono</label>
 	        </div>
 	      </div>
 	      <div class="">
@@ -66,12 +85,19 @@
 	        </div>
 	        <div class="input-field col s12 m12 l12">
 	          <i class="material-icons prefix">mode_edit</i>
-	          <textarea id="textarea1" class="materialize-textarea"></textarea>
+	          <textarea id="mensaje" class="materialize-textarea"></textarea>
 	          <label for="textarea1">Mensaje</label>
 	        </div>
 	      </div>
 
-	      <button class="btn waves-effect waves-light green accent-4" type="submit" name="action">Enviar
+		  <div class="ultimo">
+		  	<div class="progress hide">
+		      <div class="indeterminate"></div>
+		  	</div>
+		  	<h5 class="msg"></h5>
+		  </div>
+	        <br>
+	      <button id="enviar" class="btn waves-effect waves-light green accent-4" type="submit" name="action">Enviar
 		    <i class="material-icons right">send</i>
 		  </button>
 	    </form>
