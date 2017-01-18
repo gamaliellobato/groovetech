@@ -31,30 +31,13 @@
 <body>
 	
 	<!-- Inicia menu -->
-	  <nav ng-init="tab = 1" class="light-blue darken-2">
-	    <div class="nav-wrapper">
-	      <a href="#!" class="brand-logo"><img src="img/logo.png" alt="" class="logo"></a>
-	      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-	      <ul class="right hide-on-med-and-down">
-	        <li><a href="" ng-click="tab = 1">Inico</a></li>
-	        <li><a href="" ng-click="tab = 2">Quienes Somos</a></li>
-	        <li><a href="" ng-click="tab = 3">Servicios</a></li>
-	        <li><a href="" ng-click="tab = 4">Contacto</a></li>
-	      </ul>
-	      <ul class="side-nav" id="mobile-demo">
-	        <li><a href="" ng-click="tab = 1">Inico</a></li>
-	        <li><a href="" ng-click="tab = 2">Quienes Somos</a></li>
-	        <li><a href="" ng-click="tab = 3">Servicios</a></li>
-	        <li><a href="" ng-click="tab = 4">Contacto</a></li>
-	      </ul>
-	    </div>
-	  </nav>
+	<div ng-include="menu"></div>
  
 	<!-- termina menu -->
 
 
 	<!-- vista de inicio -->
-	<div ng-show="tab === 1">
+	<div>
 	  <div class="slider">
 	    <ul class="slides">
 	      <li>
@@ -280,11 +263,6 @@
 			      </div>
 		    	</div>
 		    </div>
-
-
-
-
-
 		</div><!-- Fin container -->
 	    	
 	</div>
@@ -293,25 +271,7 @@
 	</div>
 	<!-- fin vista inicio -->
 	
-	<!-- vista de quienes somos -->
-	<div ng-show="tab === 2">
-		<h1>Quienes Somos</h1>
-	</div>
-	<!-- fin vista quienes somos -->
 	
-
-	<!-- vista de servicios -->
-	<div ng-show="tab === 3">
-		<h1>Servicios</h1>
-	</div>
-	<!-- fin vista de servicios -->
-	
-	<!-- vista Contacto -->
-	<div ng-show="tab === 4">
-		<h1>Contacto</h1>
-	</div>
-	<!-- fin vista de contacto-->
-
 	<!-- Inica footer -->
 	<div ng-include="footer"></div>
 	<!-- termina footer -->
