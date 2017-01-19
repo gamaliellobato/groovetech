@@ -1,23 +1,27 @@
 console.log("mail");
 $(document).ready(function(){
+
+
+
+
 		$('#enviar').click(function(){
 		
 		var nombre = $('#nombre').val();
-			tel = $('#tel').val();
+			telefono = $('#telefono').val();
 			email = $('#email').val();
 			mensaje = $('#mensaje').val();
 
 		if (nombre == "") {
-            $(".nombre").focus();
-            return false;
-        }else if(email == ""){
-            $(".email").focus();    
+            $("#nombre").focus();
             return false;
         }else if(telefono == ""){
-            $(".telefono").focus();
+            $("#telefono").focus();    
+            return false;
+        }else if(email == ""){
+            $("#email").focus();
             return false;
         }else if(mensaje == ""){
-            $(".mensaje").focus();
+            $("#mensaje").focus();
             return false;
         }else{
                 // Si todo paso, aqui ira la llamada AJAX

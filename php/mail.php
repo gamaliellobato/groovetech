@@ -8,11 +8,11 @@ include_once('class.smtp.php');
 $para = "gamaliellobato@gmail.com";
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
-$tel = $_POST['tel'];
+$tel = $_POST['telefono'];
 $comen = $_POST['mensaje'];
 $mensaje = '<html><body>
             <center>
-              <h1>Groove</h1>
+              <h1>Groove Tech Global</h1>
             </center>
             <br>
             <br>
@@ -45,7 +45,7 @@ $mensaje = '<html><body>
 
 
 
-$asunto = "Nuevo mensaje de red convergencia";
+$asunto = "Nuevo mensaje de Groove Tech Global";
 
 //Este bloque es importante
 $mail = new PHPMailer();
@@ -71,17 +71,7 @@ $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);
 $mail->MsgHTML($mensaje);
 
 //Avisar si fue enviado o no y dirigir al index
-if($mail->Send())
-{
-	echo'<script type="text/javascript">
-			alert("Enviado Correctamente");
-		 </script>';
-}
-else{
-	echo'<script type="text/javascript">
-			alert("NO ENVIADO, intentar de nuevo");
-		 </script>';
-}
+$mail->Send();
 ?>
 
 
