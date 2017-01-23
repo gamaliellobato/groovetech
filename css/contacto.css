@@ -12,9 +12,9 @@
    }
 
    .input-field .prefix.active {
-     color: red;
+     color: #0277bd;
    }
 
    .input-field label {
-     color: red;
+     color: #0277bd;
    }
