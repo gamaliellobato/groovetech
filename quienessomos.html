@@ -16,18 +16,9 @@
 	<!-- Se agrega angular y jquery --> 
 	<script src="js/lib/angular.min.js"></script>
 	<!-- <script src="js/lib/angular-route.min.js"></script> -->
-	<script src="js/lib/jquery-3.1.1.min.js"></script>
-	
-
-	<!-- Se agrega materialize JS -->
-	<script src="materialize/js/materialize.min.js"></script>
 
 	<!-- Se agrega app JS -->
 	<script src="js/app.js"></script>
-	
-
-	<!-- Se agrega JS inicio -->
-	<script src="js/inicio.js"></script>
 </head>
 <body>
 	
@@ -41,50 +32,65 @@
 	<!-- fin vista inicio -->
 	
 	<!-- vista Quienes somos -->
-	<div>
-		<h1>Quienes somos</h1>
+	<section class="pokedann">
 		<h4>Daniel Cruz</h4>
 		<div class="row">
-			<div class="col s9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem non quis odio omnis sequi aut laborum officia cum. Neque corporis quam vero laudantium accusantium perspiciatis, repellat, aliquid obcaecati similique quisquam.</div>
-			<div class="col s3"><img class="daniel" src="img/Daniel.jpg"></div>
+			<div class="col s8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem non quis odio omnis sequi aut laborum officia cum. Neque corporis quam vero laudantium accusantium perspiciatis, repellat, aliquid obcaecati similique quisquam.</div>
+			<div class="project col s4">
+			  <div class="project__card">
+			    <a href="" class="project__image"><img class="photo" src="img/Daniel.jpg"></a>
+			    <div class="project__detail">
+			      <h2 class="project__title"><a href="#">Programador Web</a></h2>
+			      <small class="project__category"><a href="#">Front End</a></small>
+			    </div>
+			  </div>
+			</div>
 		</div>
+	</section>
+	<section class="gama">
 		<h4>Gamaliel Lobato</h4>
 		<div class="row">
-			<div class="col s3">Aqui va la foto de gama</div>
-			<div class="col s9">
+			<div class="project col s4">
+			  <div class="project__card">
+			    <a href="" class="project__image"><img class="photo" src="img/gama.jpeg"></a>
+			    <div class="project__detail">
+			      <h2 class="project__title"><a href="#">Programador</a></h2>
+			      <small class="project__category"><a href="#"></a></small>
+			    </div>
+			  </div>
+			</div>
+			<div class="col s8">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum delectus nesciunt iure ipsa architecto aperiam, assumenda doloremque non sapiente. Est esse necessitatibus harum nisi delectus illum, possimus eaque, nesciunt.
 			</div>
 		</div>
+	</section>
+	<section class="felipe">
 		<h4>Felipe</h4>
 		<div class="row">
-			<div class="col s9">
+			<div class="col s8">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsa, fuga odio illum ratione provident unde repellat, asperiores incidunt iusto accusamus illo adipisci! Sapiente quis, eius dicta consectetur quo modi?
 			</div>
-			<div class="col s3">Aqui va la foto de felipe</div>
+			<div class="col s4">Aqui va la foto de felipe</div>
 		</div>
-		<h4>Carlos</h4>
+	</section>
+	<section class="carlos">
+		<h4>Carlos Castaños</h4>
 		<div class="row">
-			<div class="col s3">Aqui va la foto de Carlos</div>
-			<div class="col s9">
+			<div class="col s4">Aqui va la foto de Carlos</div>
+			<div class="col s8">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae, soluta autem alias illo nihil quasi sapiente cum vel quam consectetur possimus adipisci libero, totam explicabo odio minima tempora debitis.
 			</div>
 		</div>
-		<h4>Felipe</h4>
+	</section>
+	<section class="tania">
+		<h4>Tania Tapia Díaz</h4>
 		<div class="row">
-			<div class="col s9">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ipsa, fuga odio illum ratione provident unde repellat, asperiores incidunt iusto accusamus illo adipisci! Sapiente quis, eius dicta consectetur quo modi?
-			</div>
-			<div class="col s3">Aqui va la foto de felipe</div>
-		</div>
-		<h4>otra persona</h4>
-		<div class="row">
-			<div class="col s3">Aqui va la foto de otra persona</div>
-			<div class="col s9">
+			<div class="col s4">Aqui va la foto de otra persona</div>
+			<div class="col s8">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis accusamus placeat similique, est sapiente tempore laborum architecto repellat explicabo, dolore rerum adipisci. Enim optio quam quaerat, quis. Accusantium, facere, earum?
 			</div>
 		</div>
-	
-	</div>
+	</section>
 	<!-- fin vista de Quienes somos-->
 
 	<!-- Inica footer -->
@@ -92,4 +98,7 @@
 	<!-- termina footer -->
 	
 </body>
+<script src="js/lib/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.hover3d.js" ></script>
+<script src="js/quienessomos.js" ></script>
 </html>
