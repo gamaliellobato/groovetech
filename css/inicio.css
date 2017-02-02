@@ -1,4 +1,6 @@
-
+.slider .slides li img{
+	height: 150%;
+}
 
 .slides{
 	height: 600px !important;
@@ -20,9 +22,19 @@
     margin-bottom: 0;
 }
 
+@media (min-width: 320px) {
+	.brand-logo{
+		padding-right: 10px !important;
+	}
+}
+
+.brand-logo{
+	padding-left: 10px !important;
+}
+
 .logo{
-	width: 50px;
-	height: 50px;
+	width: 65px !important;
+	height: 65px !important;
 }
 
 .trabajos{
