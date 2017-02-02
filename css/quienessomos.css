@@ -3,6 +3,42 @@ section{padding: 12px 0 12px 0;}
 h4{font-size: 2rem !important;color: #fff;}
 .izq{text-align: left;}
 span{color: #0288d1;}
+.vistaDos{display: none;}
 
 /*estilos foto 3d*/
 .photo{width: 100%; }
+
+/*media queries*/
+@media(max-width: 1024px){
+  h4{margin: 0 -0.088rem 0;}
+}
+
+@media(max-width: 767px){
+  h4{font-size: 1.3rem !important;}
+  .cs-style-5 figure a {right: 43px; }
+}
+
+@media(max-width: 600px){
+  h4{margin: -8px -0.088rem 0;}
+}
+
+@media(max-width: 480px){
+  .vistaUno{display: none;}
+  .vistaDos{display: initial;}
+  h4{font-size: 2rem !important;color: #fff;}
+  .no-touch .cs-style-5 figure:hover img, .cs-style-5 figure.cs-hover img {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.6);
+}
+}
+
+@media(max-width: 320px){
+  .no-touch .cs-style-5 figure:hover img, .cs-style-5 figure.cs-hover img {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.5);
+}
+}
