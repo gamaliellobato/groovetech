@@ -9,18 +9,27 @@
 
 	 <link rel="stylesheet" href="css/inicio.css">
 	 <link rel="stylesheet" href="css/quienessomos.css">
-	 <link rel="stylesheet" type="text/css" href="css/default.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	 <!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
+	 <link rel="stylesheet" type="text/css" href="css/component.css" />
 
 	 <!--Se importa Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Se agrega angular y jquery --> 
 	<script src="js/lib/angular.min.js"></script>
+
+	<script src="js/lib/jquery-3.1.1.min.js"></script>
+	<!-- Se agrega materialize JS -->
+	<script src="materialize/js/materialize.min.js"></script>
+	<script src="js/quienessomos.js" ></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/toucheffects.js"></script>
 	<!-- <script src="js/lib/angular-route.min.js"></script> -->
 
 	<!-- Se agrega app JS -->
 	<script src="js/app.js"></script>
+	<!-- Se agrega JS inicio -->
+	<script src="js/inicio.js"></script>
 </head>
 <body>
 	
@@ -35,7 +44,7 @@
 	<section class="pokedann">
 		<div class="row vistaUno">
 			<!-- perfil pokedann -->
-			<div class="demo-3 col s6 m4 l4">
+			<div class="demo-3 col s12 m4 l4">
 				<!-- Top Navigation -->
 				<ul class="grid cs-style-5">
 					<figure>
@@ -50,7 +59,7 @@
 			</div><!-- /container -->
 
 			<!-- perfil gama -->
-			<div class="demo-3 col s6 m4 l4">
+			<div class="demo-3 col s12 m4 l4">
 				<!-- Top Navigation -->
 				<ul class="grid cs-style-3">
 					<figure class="izq">
@@ -65,7 +74,7 @@
 			</div><!-- /container -->
 
 			<!-- perfil felipe -->
-			<div class="demo-3 col s6 m4 l4">
+			<div class="demo-3 col s12 m4 l4">
 				<!-- Top Navigation -->
 				<ul class="grid cs-style-5">
 					<figure>
@@ -78,9 +87,10 @@
 					</figure>
 				</ul>
 			</div><!-- /container -->
-
+		
+		<div class="col m2"></div>
 			<!-- perfil carlos -->
-			<div class="demo-3 col s6 m4 l4">
+			<div class="demo-3 col s12 m4 l4 ">
 				<!-- Top Navigation -->
 				<ul class="grid cs-style-3">
 					<figure class="izq">
@@ -95,22 +105,10 @@
 			</div><!-- /container -->
 
 			<!-- perfil tania -->
-			<div class="demo-3 col s6 m4 l4">
-				<!-- Top Navigation -->
-				<ul class="grid cs-style-5">
-					<figure>
-						<img src="img/Daniel.jpg">
-						<figcaption>
-							<h4>Tania Tapia</h4>
-							<span>Ocupacion</span>
-							<a href="">Checa su perfil</a>
-						</figcaption>
-					</figure>
-				</ul>
-			</div><!-- /container -->
+			
 
 			<!-- perfil betty -->
-			<div class="demo-3 col s6 m4 l4">
+			<div class="demo-3 col s12 m4 l4 ">
 				<!-- Top Navigation -->
 				<ul class="grid cs-style-3">
 					<figure class="izq">
@@ -188,19 +186,7 @@
 			</div><!-- /container -->
 
 			<!-- perfil tania -->
-			<div class="demo-3 col s12">
-				<!-- Top Navigation -->
-				<ul class="grid cs-style-5">
-					<figure>
-						<img src="img/Daniel.jpg">
-						<figcaption>
-							<h4>Tania Tapia</h4>
-							<span>Ocupacion</span>
-							<a href="">Checa su perfil</a>
-						</figcaption>
-					</figure>
-				</ul>
-			</div><!-- /container -->
+			
 
 			<!-- perfil betty -->
 			<div class="demo-3 col s12">
@@ -224,8 +210,5 @@
 	<!-- termina footer -->
 	
 </body>
-<script src="js/lib/jquery-3.1.1.min.js"></script>
-<script src="js/quienessomos.js" ></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/toucheffects.js"></script>
+
 </html>
