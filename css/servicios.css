@@ -1,3 +1,7 @@
 .parallax-container{
 	height: 250px;
 }
+
+.card-panel{
+	height: 430px !important;
+}
